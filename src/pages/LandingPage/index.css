@@ -1,0 +1,94 @@
+/* ============================================
+   LANDING PAGE
+   ============================================ */
+.landing-nav {
+  position: sticky; top: 0; z-index: 40;
+  height: 64px; background: rgba(255,255,255,0.95);
+  border-bottom: 1px solid #e9d5ff;
+  padding: 0 48px; display: flex; align-items: center; justify-content: space-between;
+}
+.landing-nav-links { display: flex; gap: 32px; list-style: none; padding: 0; margin: 0; }
+.landing-nav-link { font-size: 14px; font-weight: 500; color: #6b7280; text-decoration: none; }
+.landing-hero {
+  display: flex; align-items: center; gap: 64px;
+  max-width: 1200px; margin: 0 auto; padding: 80px 48px;
+}
+.landing-hero-content { flex: 1; }
+.landing-hero-visual { flex: 1; display: flex; justify-content: center; }
+.landing-highlight { color: #7c3aed; }
+.landing-stats { display: flex; gap: 40px; margin-top: 32px; }
+.stat-card { text-align: center; }
+.stat-number { font-family: "Playfair Display", serif; font-size: 28px; font-weight: 700; color: #7c3aed; }
+.stat-label { font-size: 12px; color: #6b7280; margin-top: 2px; }
+.landing-resume-mockup {
+  width: 300px; background: #fff; border-radius: 12px; padding: 28px;
+  box-shadow: 0 20px 60px rgba(124,58,237,0.12); border: 1px solid #e9d5ff;
+}
+.mockup-line { height: 8px; border-radius: 4px; margin-bottom: 8px; }
+.mockup-line-title { width: 60%; background: #2e1065; height: 12px; margin-bottom: 12px; }
+.mockup-line-subtitle { width: 80%; background: #e9d5ff; }
+.mockup-line-text { width: 100%; background: #f3e8ff; }
+.mockup-line-short { width: 45%; background: #f3e8ff; }
+.mockup-section-gap { height: 16px; }
+.mockup-bullet { display: flex; gap: 6px; margin-bottom: 4px; align-items: center; }
+.mockup-bullet-dot { width: 4px; height: 4px; border-radius: 50%; background: #7c3aed; flex-shrink: 0; }
+.mockup-bullet-line { height: 6px; border-radius: 3px; background: #f3e8ff; flex: 1; }
+
+.landing-trust-bar {
+  background: #ede9fe; padding: 20px 48px; text-align: center;
+  font-size: 14px; color: #6b7280;
+}
+.trust-companies { font-weight: 600; color: #4c1d95; }
+.landing-section {
+  max-width: 1200px; margin: 0 auto; padding: 80px 48px;
+}
+.landing-section-title {
+  font-family: "Playfair Display", serif; font-size: 32px; font-weight: 700;
+  color: #1e1b4b; text-align: center; margin-bottom: 16px;
+}
+.landing-section-subtitle {
+  font-size: 16px; color: #6b7280; text-align: center; margin-bottom: 48px; max-width: 600px; margin-left: auto; margin-right: auto;
+}
+.feature-card {
+  background: #ffffff; border: 1px solid #e9d5ff; border-radius: 14px;
+  padding: 32px; text-align: center;
+  box-shadow: 0 1px 3px rgba(124,58,237,0.06);
+}
+.feature-card-icon {
+  width: 56px; height: 56px; border-radius: 16px; background: #ede9fe;
+  color: #7c3aed; display: flex; align-items: center; justify-content: center;
+  font-size: 24px; margin: 0 auto 16px;
+}
+.step-card { text-align: center; position: relative; padding: 0 16px; }
+.step-number {
+  width: 48px; height: 48px; border-radius: 50%;
+  background: linear-gradient(135deg, #7c3aed, #6d28d9);
+  color: #fff; display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 18px; margin: 0 auto 16px;
+  font-family: "Playfair Display", serif;
+}
+.landing-cta {
+  background: linear-gradient(135deg, #2e1065, #4c1d95, #5b21b6);
+  padding: 80px 48px; text-align: center;
+}
+.landing-cta-badges { display: flex; justify-content: center; gap: 16px; margin-top: 24px; }
+.landing-footer {
+  max-width: 1200px; margin: 0 auto; padding: 32px 48px;
+  display: flex; justify-content: space-between; align-items: center;
+  border-top: 1px solid #e9d5ff;
+}
+.landing-footer-links { display: flex; gap: 24px; }
+.landing-footer-link { font-size: 13px; color: #6b7280; text-decoration: none; }
+
+@media (max-width: 768px) {
+  .landing-nav { padding: 0 20px; }
+  .landing-nav-links { display: none; }
+  .landing-hero { flex-direction: column; padding: 40px 20px; gap: 32px; text-align: center; }
+  .landing-hero-visual { display: none; }
+  .landing-stats { flex-direction: column; gap: 16px; align-items: center; }
+  .landing-trust-bar { padding: 16px 20px; }
+  .landing-section { padding: 48px 20px; }
+  .landing-cta { padding: 48px 20px; }
+  .landing-footer { flex-direction: column; gap: 16px; text-align: center; padding: 24px 20px; }
+  .landing-footer-links { justify-content: center; }
+}

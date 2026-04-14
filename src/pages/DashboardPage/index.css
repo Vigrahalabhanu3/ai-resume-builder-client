@@ -1,0 +1,25 @@
+/* ============================================
+   DASHBOARD
+   ============================================ */
+.dashboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+.resume-card {
+  background: #ffffff;
+  border: 1px solid #e9d5ff;
+  border-radius: 14px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.resume-card-bar { height: 4px; }
+.resume-card-body { padding: 20px; }
+.resume-card-score-bar {
+  height: 4px;
+  background-color: #f3e8ff;
+  border-radius: 2px;
+  overflow: hidden;
+  flex: 1;
+}

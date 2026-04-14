@@ -1,0 +1,72 @@
+/* ============================================
+   TEMPLATES PAGE
+   ============================================ */
+.templates-page { max-width: 1200px; margin: 0 auto; padding: 48px 32px; }
+.template-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+@media (max-width: 768px) {
+  .template-grid-3 { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+}
+.popular-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+  font-family: "Open Sans", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #7c3aed, #a78bfa);
+  color: #ffffff;
+}
+
+/* Template Grid (3 columns — bigger cards, readable content) */
+.template-grid-5 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  justify-items: center;
+}
+@media (max-width: 768px) {
+  .template-grid-5 { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+}
+
+/* Template Grid inside modals */
+.template-grid-modal {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+@media (max-width: 768px) {
+  .template-grid-modal { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Smaller pages inside modals */
+.template-grid-modal .template-page {
+  padding-bottom: 124%;
+}
+.template-grid-modal .template-page-inner {
+  zoom: 0.22;
+}
+
+/* Template Preview Modal (full-size preview before creating) */
+.template-preview-modal {
+  background: #ffffff;
+  border-radius: 20px;
+  width: 94vw;
+  max-width: 900px;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 24px 80px rgba(124, 58, 237, 0.25);
+}
+
+@media (max-width: 768px) {
+  .template-preview-modal { width: 95vw; height: 90vh; }
+}

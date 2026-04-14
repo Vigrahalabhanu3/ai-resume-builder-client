@@ -1,0 +1,43 @@
+/* ============================================
+   SIDEBAR & TABS
+   ============================================ */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #ffffff;
+  border-right: 1px solid #e9d5ff;
+}
+.sidebar-tabs {
+  display: flex;
+  border-bottom: 1px solid #e9d5ff;
+  flex-shrink: 0;
+}
+.sidebar-tab {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 12px 8px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #9ca3af;
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+}
+.sidebar-tab-active {
+  color: #7c3aed;
+  background-color: #faf5ff;
+  border-bottom-color: #7c3aed;
+}
+.sidebar-tab-icon {
+  font-size: 20px;
+}
+.sidebar-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px;
+}

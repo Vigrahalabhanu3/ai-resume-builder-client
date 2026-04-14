@@ -1,0 +1,33 @@
+/* ============================================
+   RESUME PREVIEW
+   ============================================ */
+.preview-container {
+  background-color: #f3e8ff;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.preview-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  background: #ffffff;
+  border-bottom: 1px solid #e9d5ff;
+  flex-shrink: 0;
+}
+.preview-paper-area {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.preview-paper {
+  background: #ffffff;
+  box-shadow: 0 4px 24px rgba(30, 27, 75, 0.1);
+  border-radius: 3px;
+  border: 1px solid #e2ddf0;
+  overflow: hidden;
+}

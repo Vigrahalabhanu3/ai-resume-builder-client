@@ -1,0 +1,42 @@
+/* ============================================
+   ACCORDION (Section Editor)
+   ============================================ */
+.accordion-item {
+  border: 1px solid #e9d5ff;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+.accordion-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #4c1d95;
+  background: #ffffff;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  text-align: left;
+}
+.accordion-header-active {
+  background-color: #faf5ff;
+  border-left: 4px solid #7c3aed;
+  color: #7c3aed;
+}
+.accordion-icon {
+  font-size: 18px;
+  color: #a78bfa;
+}
+.accordion-chevron {
+  margin-left: auto;
+  font-size: 16px;
+  color: #d4d4d8;
+}
+.accordion-body {
+  padding: 16px;
+  border-top: 1px solid #e9d5ff;
+  background: #faf5ff;
+}

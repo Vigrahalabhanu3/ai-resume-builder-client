@@ -1,0 +1,85 @@
+/* ============================================
+   HOME PAGE
+   ============================================ */
+.home-page { max-width: 1200px; margin: 0 auto; padding: 48px 32px; }
+.home-greeting { text-align: center; margin-bottom: 48px; }
+.home-actions { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 64px; }
+.home-action-card {
+  background: #ffffff; border: 2px solid #e9d5ff; border-radius: 20px;
+  padding: 44px 28px; text-align: center; cursor: pointer;
+  box-shadow: 0 4px 16px rgba(124,58,237,0.06);
+}
+.home-action-icon {
+  width: 80px; height: 80px; border-radius: 20px;
+  background: linear-gradient(135deg, #ede9fe, #ddd6fe); color: #7c3aed;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 36px; margin: 0 auto 20px;
+}
+.home-recent { margin-top: 48px; }
+.home-recent-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; }
+.home-recent-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+
+.nav-links { display: flex; gap: 4px; margin-left: 24px; }
+.nav-link {
+  font-size: 13px; font-weight: 500; color: #6b7280;
+  text-decoration: none; padding: 6px 14px; border-radius: 8px;
+}
+.nav-link-active { background: #ede9fe; color: #7c3aed; }
+
+/* ============================================
+   UPLOAD MODAL
+   ============================================ */
+.upload-dropzone {
+  border-width: 2px;
+  border-style: dashed;
+  border-color: #ddd6fe;
+  border-radius: 14px;
+  padding: 40px 24px;
+  text-align: center;
+  background-color: #faf5ff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.upload-dropzone-active {
+  border-color: #7c3aed;
+  background-color: #ede9fe;
+}
+.upload-file-info {
+  display: flex; align-items: center; gap: 12px;
+  padding: 12px 16px; background: #ede9fe; border-radius: 10px;
+  margin-top: 16px;
+}
+
+/* ============================================
+   MODAL (used by HomePage and TemplatesPage)
+   ============================================ */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(30, 27, 75, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+  padding: 24px;
+}
+.modal-content {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(124, 58, 237, 0.15);
+  width: 100%;
+  max-width: 500px;
+  padding: 32px;
+}
+
+@media (max-width: 768px) {
+  .home-actions { grid-template-columns: 1fr; }
+  .home-recent-grid { grid-template-columns: 1fr; }
+  .nav-links { display: none; }
+}

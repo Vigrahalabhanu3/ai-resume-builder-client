@@ -1,0 +1,90 @@
+/* ============================================
+   LOGIN PAGE
+   ============================================ */
+.login-page { display: flex; min-height: 100vh; }
+.login-brand-panel {
+  width: 50%;
+  background: linear-gradient(135deg, #2e1065, #4c1d95, #5b21b6);
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+.login-brand-orb-1 {
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 320px;
+  height: 320px;
+  background: rgba(167, 139, 250, 0.15);
+  border-radius: 50%;
+}
+.login-brand-orb-2 {
+  position: absolute;
+  bottom: -60px;
+  left: -60px;
+  width: 260px;
+  height: 260px;
+  background: rgba(124, 58, 237, 0.15);
+  border-radius: 50%;
+}
+.login-form-panel {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px;
+  background-color: #faf5ff;
+}
+.login-form-container { width: 100%; max-width: 420px; }
+.login-feature-card {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+.login-feature-icon {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #a78bfa;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+.login-divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 24px 0;
+}
+.login-divider-line { flex: 1; height: 1px; background-color: #e9d5ff; }
+.login-divider-text { font-size: 12px; color: #a78bfa; font-weight: 500; }
+
+@media (max-width: 992px) {
+  .login-brand-panel { display: none; }
+  .login-form-panel { padding: 24px; }
+}
+
+/* ============================================
+   AUTH PAGE (new login design)
+   ============================================ */
+.auth-page {
+  min-height: 100vh; display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  background: #faf5ff; padding: 48px 24px;
+}
+.auth-card {
+  width: 100%; max-width: 440px;
+  background: #ffffff; border: 1px solid #e9d5ff; border-radius: 14px;
+  border-top: 4px solid #7c3aed; padding: 32px;
+  box-shadow: 0 4px 20px rgba(124,58,237,0.08);
+}
+.auth-trust-line {
+  display: flex; justify-content: center; gap: 16px; margin-top: 24px;
+  font-size: 12px; color: #a78bfa;
+}

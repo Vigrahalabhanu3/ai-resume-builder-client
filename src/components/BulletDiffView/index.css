@@ -1,0 +1,6 @@
+/* ============================================
+   DIFF VIEW
+   ============================================ */
+.diff-panel { border-radius: 10px; padding: 16px; }
+.diff-original { background-color: #fef2f2; border: 1px solid #fecaca; }
+.diff-improved { background-color: #f0fdf4; border: 1px solid #bbf7d0; }

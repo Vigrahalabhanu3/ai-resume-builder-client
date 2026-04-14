@@ -1,0 +1,96 @@
+/* ============================================
+   ATS SCORE
+   ============================================ */
+.score-circle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+}
+.score-ring {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.score-value {
+  position: absolute;
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+  font-weight: 700;
+}
+.score-label {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 8px;
+}
+.metric-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid #f3e8ff;
+  cursor: pointer;
+}
+.metric-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #1e1b4b;
+  min-width: 120px;
+}
+.metric-bar {
+  flex: 1;
+  height: 6px;
+  background-color: #f3e8ff;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.metric-fill {
+  height: 100%;
+  border-radius: 3px;
+}
+.metric-score {
+  font-size: 13px;
+  font-weight: 700;
+  min-width: 32px;
+  text-align: right;
+}
+.metric-weight {
+  font-size: 11px;
+  color: #a78bfa;
+  min-width: 30px;
+}
+.metric-fix {
+  font-size: 13px;
+  color: #4c1d95;
+  background: #faf5ff;
+  padding: 10px 14px;
+  border-radius: 8px;
+  margin-top: 6px;
+  border-left: 3px solid #a78bfa;
+}
+.keyword-tag {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 20px;
+  background-color: #fce7f3;
+  color: #be185d;
+  margin: 3px;
+}
+.keyword-tag-present {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+.suggestion-item {
+  padding: 10px 14px;
+  border-left: 3px solid #7c3aed;
+  background: #faf5ff;
+  border-radius: 0 8px 8px 0;
+  font-size: 13px;
+  color: #4c1d95;
+  margin-bottom: 8px;
+}
